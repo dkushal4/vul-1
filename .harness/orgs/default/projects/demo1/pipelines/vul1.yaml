@@ -1,0 +1,22 @@
+pipeline:
+  name: vul-1
+  identifier: vul1
+  tags: {}
+  projectIdentifier: demo1
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: ds
+        identifier: ds
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}
